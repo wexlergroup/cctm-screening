@@ -1,0 +1,18 @@
+# Python bytecode caches. Created whenever a figure or analysis script runs,
+# because several modules (fig_style, cfm_model, render_utils, style_params,
+# hull_data) are imported rather than executed directly.
+__pycache__/
+*.py[cod]
+
+# Virtual environment, if one is created inside the clone while following the
+# pip install -r requirements.txt step in the README.
+.venv/
+venv/
+
+# Editor state.
+.idea/
+.vscode/
+
+# macOS filesystem metadata.
+.DS_Store
+._*

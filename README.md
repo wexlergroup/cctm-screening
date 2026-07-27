@@ -45,6 +45,10 @@ Each script reads from `figures/data/` and writes one PNG to `figures/plots/`; r
 - Processed data and figure scripts: this repository, archived at Zenodo (DOI to be assigned on deposition).
 - Raw VASP inputs and outputs: NOMAD, DOI [10.17172/nomad.6d7e-hvb1](https://doi.org/10.17172/nomad.6d7e-hvb1).
 
+## Licensing
+
+The data and figures (`figures/data/`, `figures/plots/`, the two Fig. 1 structure panels in `figures/`, and `cfm-settings/features.csv`) are available under the Creative Commons Attribution 4.0 International license (CC BY 4.0); see `LICENSE-DATA`. Reuse of them requires attribution to the article cited above. The figure and analysis code, the READMEs, and the configuration files are available under the MIT license; see `LICENSE`. The raw density-functional-theory inputs and outputs are deposited separately on NOMAD and carry that repository's terms.
+
 ## Acknowledgements
 
 This material is based upon work supported by the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under the Fuel Cell Technologies Office (FCTO), Award Number DE-EE0010733, through the HydroGEN Advanced Water Splitting Materials Consortium.
