@@ -42,7 +42,7 @@ Each script reads from `figures/data/` and writes one PNG to `figures/plots/`; r
 
 ## Data availability
 
-- Processed data and figure scripts: this repository, archived at Zenodo (DOI to be assigned on deposition).
+- Processed data and figure scripts: this repository, which will be archived at Zenodo with the DOI provided prior to publication.
 - Raw VASP inputs and outputs: NOMAD, DOI [10.17172/nomad.6d7e-hvb1](https://doi.org/10.17172/nomad.6d7e-hvb1).
 
 ## Licensing
