@@ -15,9 +15,9 @@ Self-contained copies of the analysis scripts behind the published results, adap
 
 Every DFT-derived number in the manuscript can be followed from the raw VASP outputs to the published artifact:
 
-1. **Raw calculations** -- the NOMAD deposit, DOI 10.17172/nomad.6d7e-hvb1 (one directory per calculation: 6 bulk relaxations + 90 oxygen-vacancy relaxations).
+1. **Raw calculations** -- the NOMAD deposit, DOI [10.17172/nomad.6d7e-hvb1](https://doi.org/10.17172/nomad.6d7e-hvb1) (one directory per calculation: 6 bulk relaxations + 90 oxygen-vacancy relaxations).
 2. **`figure_data_from_vasp.py`** extracts the final `energy(sigma->0)` of every run and writes the vacancy-formation-energy and hull-energy CSVs in `figures/data/`, using `E_O2` from `hull_data.py` (single source of truth).
-3. **`figures/cfm_model.py`** re-fits the CFM on `dft_ev_sites.csv` and computes the Table 3 CFM and SCAN+*U* Δδ columns; `dgnn_delta_grid.py` produces the dGNN grid.
+3. **`figures/cfm_model.py`** re-fits the CFM on `dft_ev_sites.csv` and computes the Table 3 CFM and SCAN+*U* Δ*δ* columns; `dgnn_delta_grid.py` produces the dGNN grid.
 4. **`figures/figure*.py`** render the PNGs in `figures/plots/` from the CSVs (see `figures/README.md` for the per-figure map).
 
 The experimental chain is shorter: `tga_preprocess.py` converts the as-received TGA workbooks into the `tga_*.csv` files; the XRD CSVs and LSFR JSON files are themselves the as-received data (see the provenance tables in `figures/README.md`).
