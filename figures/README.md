@@ -30,6 +30,7 @@ cd figures && python3 figure3.py
 | ESI CFM parity | `figureS_cfm_parity.py` | `dft_ev_sites.csv` | `figureS_cfm_parity.png` |
 | ESI vacancy–vacancy interaction | `figureS_vv.py` | (analytic; no inputs) | `figureS_vv.png` |
 | ESI XRD | `figureS_xrd.py` | `xrd_CCTM*.csv`, `cctm2112_sqs.cif` | `figureS_xrd.png` |
+| ESI post-cycling XRD | `figureS_xrd_postcycling.py` | `raw/xrd/CCTM*.xy` | `figureS_xrd_postcycling.png` |
 | ESI TGA | `figureS_tga.py` | `tga_CCTM*_protocol_B.csv` (the protocol-A CSVs are included as data but not plotted) | `figureS_tga.png` |
 | ESI dGNN parity | `figureS_dgnn_parity.py` | `dgnn_preds_pretrained.csv`, `dgnn_preds_finetuned.csv`, `dgnn_cv_folds.csv`, `dgnn_cv_overall.csv` | `figureS_dgnn_parity.png` |
 | ESI dGNN vs CFM distributions | `figureS_dgnn_vs_cfm.py` | `dgnn_screen_finetuned.csv` | `figureS_dgnn_vs_cfm.png` |
@@ -62,6 +63,7 @@ Experimental chain (samples synthesized at ASU; measurements as noted):
 | --- | --- | --- |
 | `tga_CCTM*_protocol_{A,B}.csv` | `../scripts/tga_preprocess.py` (byte-for-byte reproducible) | raw TGA workbooks in `data/raw/tga/` (as-received instrument exports, verbatim filenames) |
 | `xrd_CCTM*.csv` | as received (two-column 2θ/intensity exports from ASU) | ASU diffractometer exports; raw scans not held in this repository |
+| `raw/xrd/CCTM*_{fresh,postLSFR,postTGA}.xy` | as received (two-column 2θ/intensity exports from ASU, 28 Oct 2026; `CCTM1771014_postLSFR.xy` renamed only to remove a space) | ASU diffractometer scans of the as-synthesized powders and of the samples recovered after LSFR or TGA cycling |
 | `lsfr_CCTM*.json` | as received (structured export from the Sandia laser-heated stagnation flow reactor) | SNL LSFR capability node; these files are the raw cycling data |
 
 `data/raw/tga/CCTM TGA + LSFR Data Updated.xlsx` is the collaborators' summary compilation (per-cycle Δ*δ* values); it is kept for reference and is not read by any script.
