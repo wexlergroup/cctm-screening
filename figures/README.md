@@ -2,7 +2,7 @@
 
 Every figure in the manuscript (`main.tex`) and the ESI (`esi.tex`) is produced by one standalone script in this directory, reading processed data from `data/` and writing a 600-dpi PNG to `plots/`. The PNGs in `plots/` are what the documents embed, so the paper compiles without running any Python; run a script only to change its figure, and the PNG it writes replaces the previous one.
 
-Regeneration is deterministic: an unchanged script regenerates its PNG in `plots/` byte for byte (on a machine where Arial resolves; check stderr for `findfont` warnings). All scripts run from inside `figures/`:
+Regeneration is deterministic: an unchanged script regenerates its PNG in `plots/` byte for byte with matplotlib's default macOS backend (`macosx`) on a machine where Arial resolves (check stderr for `findfont` warnings). With the `Agg` backend (the default on a headless or Linux machine) the output is visually equivalent, but text positions and image dimensions shift by a few pixels. All scripts run from inside `figures/`:
 
 ```bash
 cd figures && python3 figure3.py
@@ -51,7 +51,7 @@ Computational chain (see `../scripts/README.md` for the full description):
 | `cfm_delta_grid.csv` | `cfm_model.py` | `dft_ev_sites.csv` + `../cfm-settings/features.csv` |
 | `dgnn_delta_grid.csv` | `../scripts/dgnn_delta_grid.py` | `dgnn_screen_finetuned.csv` |
 | `dft_dos.csv` | extracted from the deposit's `vasprun.xml` files (Γ-only and 2×2×2 *k*-grids; `kgrid` column) | NOMAD deposit |
-| `dft_magmoments_bulk.csv`, `dft_magmoments_vacancy.csv` | extracted from the deposit's OUTCARs (unsigned moments); `dft_magmoments_vacancy.csv` is a data extra read by no figure script | NOMAD deposit |
+| `dft_magmoments_bulk.csv`, `dft_magmoments_vacancy.csv` | PAW-sphere columns (`mu_PAW`, `dmu_PAW`) extracted from the deposit's OUTCARs (unsigned moments); Bader columns (`mu_Bader`, `dmu_Bader`) from separate static Bader-analysis runs; `dft_magmoments_vacancy.csv` is a data extra read by no figure script | NOMAD deposit for the PAW-sphere columns; the Bader runs are not part of the deposit, whose README lists the INCAR changes that regenerate them |
 | `dgnn_preds_pretrained.csv`, `dgnn_preds_finetuned.csv`, `dgnn_screen_finetuned.csv`, `dgnn_cv_folds.csv` (prediction columns) | fixed dGNN model outputs, not regenerable from the data included here | external dGNN training (T. C. Douglas *et al.*, *Mater. Horiz.*, 2026, **13**, DOI [10.1039/D5MH01566A](https://doi.org/10.1039/D5MH01566A)) |
 | `bulk_compositions.csv` | composition design table for the sampled bulks | defined in this work |
 | `cctm2112_sqs.cif` | CCTM2112 SQS supercell (calculated XRD reference) | this work's SQS construction |
@@ -66,4 +66,4 @@ Experimental chain (samples synthesized at ASU; measurements as noted):
 | `raw/xrd/CCTM*_{fresh,postLSFR,postTGA}.xy` | as received (two-column 2θ/intensity exports from ASU, 28 Oct 2026; `CCTM1771014_postLSFR.xy` renamed only to remove a space) | ASU diffractometer scans of the as-synthesized powders and of the samples recovered after LSFR or TGA cycling |
 | `lsfr_CCTM*.json` | as received (structured export from the Sandia laser-heated stagnation flow reactor) | SNL LSFR capability node; these files are the raw cycling data |
 
-`data/raw/tga/CCTM TGA + LSFR Data Updated.xlsx` is the collaborators' summary compilation (per-cycle Δ*δ* values); it is kept for reference and is not read by any script.
+`data/raw/tga/CCTM TGA + LSFR Data Updated.xlsx` is the collaborators' summary compilation. Its `Initial TGA Data Summary` sheet holds the Δ*δ* values reported in the TGA columns of Table 3, and its `LSFR Data Summary` sheet holds the per-step LSFR values; it is not read by any script.

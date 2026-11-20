@@ -1,0 +1,33 @@
+{
+  "title": "Data and figure scripts for \"Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production\"",
+  "upload_type": "dataset",
+  "version": "1.0.0",
+  "description": "<p>Processed data, figure scripts, and rendered figures for: M. Kumar, N. Ali, M. D. Witman, S. Zhai, J. E. Miller, I. Ermanoski, E. B. Stechel and R. B. Wexler, <em>Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production</em>, J. Mater. Chem. A, 2026, accepted.</p><p>The archive holds the SCAN+<em>U</em> oxygen-vacancy formation energies, the crystal-feature-model and defect graph neural network predictions, the thermogravimetric, stagnation-flow-reactor, and powder X-ray diffraction measurements, and one script per figure. The raw VASP inputs and outputs are in the NOMAD repository, DOI <a href=\"https://doi.org/10.17172/nomad.6d7e-hvb1\">10.17172/nomad.6d7e-hvb1</a>.</p><p>Data and figures are licensed CC BY 4.0 (LICENSE-DATA); the code, READMEs, and configuration files are licensed MIT (LICENSE).</p>",
+  "creators": [
+    {"name": "Kumar, Manish", "affiliation": "Washington University in St. Louis"},
+    {"name": "Ali, Natalia", "affiliation": "Arizona State University"},
+    {"name": "Witman, Matthew D.", "affiliation": "Sandia National Laboratories"},
+    {"name": "Zhai, Shang", "affiliation": "The Ohio State University"},
+    {"name": "Miller, James E.", "affiliation": "Arizona State University"},
+    {"name": "Ermanoski, Ivan", "affiliation": "Arizona State University"},
+    {"name": "Stechel, Ellen B.", "affiliation": "Arizona State University"},
+    {"name": "Wexler, Robert B.", "affiliation": "Washington University in St. Louis", "orcid": "0000-0002-6861-6421"}
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": [
+    "solar thermochemical hydrogen",
+    "perovskite oxides",
+    "oxygen vacancy formation energy",
+    "density functional theory",
+    "SCAN+U",
+    "crystal-feature model",
+    "defect graph neural network",
+    "thermogravimetric analysis"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.17172/nomad.6d7e-hvb1", "relation": "isSupplementedBy", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "arXiv:2607.28752", "relation": "isSupplementTo", "scheme": "arxiv", "resource_type": "publication-preprint"}
+  ],
+  "notes": "Supported by the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, Fuel Cell Technologies Office, Award Number DE-EE0010733, through the HydroGEN Advanced Water Splitting Materials Consortium."
+}

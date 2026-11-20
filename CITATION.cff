@@ -1,0 +1,78 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the article given under preferred-citation."
+type: dataset
+title: "Data and figure scripts for \"Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production\""
+version: "1.0.0"
+abstract: "Processed data, figure scripts, and rendered figures for a study of oxygen-vacancy formation energetics in Ca–Ce–Ti–Mn (CCTM) perovskites for two-step solar thermochemical hydrogen production: SCAN+U oxygen-vacancy formation energies, crystal-feature-model and defect graph neural network predictions, and thermogravimetric, stagnation-flow-reactor, and powder X-ray diffraction measurements. The raw VASP inputs and outputs are in the NOMAD repository, DOI 10.17172/nomad.6d7e-hvb1."
+authors:
+  - family-names: Kumar
+    given-names: Manish
+    affiliation: "Department of Chemistry and Institute of Materials Science and Engineering, Washington University in St. Louis"
+  - family-names: Ali
+    given-names: Natalia
+    affiliation: "ASU LightWorks and the School for Engineering of Matter, Transport and Energy, Arizona State University"
+  - family-names: Witman
+    given-names: "Matthew D."
+    affiliation: "Sandia National Laboratories"
+  - family-names: Zhai
+    given-names: Shang
+    affiliation: "Department of Mechanical and Aerospace Engineering and School of Earth Sciences, The Ohio State University"
+  - family-names: Miller
+    given-names: "James E."
+    affiliation: "ASU LightWorks and the School of Sustainability, Arizona State University"
+  - family-names: Ermanoski
+    given-names: Ivan
+    affiliation: "ASU LightWorks and the School of Sustainability, Arizona State University"
+  - family-names: Stechel
+    given-names: "Ellen B."
+    affiliation: "ASU LightWorks and the School of Molecular Sciences, Arizona State University"
+  - family-names: Wexler
+    given-names: "Robert B."
+    affiliation: "Department of Chemistry and Institute of Materials Science and Engineering, Washington University in St. Louis"
+    orcid: "https://orcid.org/0000-0002-6861-6421"
+repository-code: "https://github.com/wexlergroup/cctm-screening"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - solar thermochemical hydrogen
+  - perovskite oxides
+  - oxygen vacancy formation energy
+  - density functional theory
+  - SCAN+U
+  - crystal-feature model
+  - defect graph neural network
+  - thermogravimetric analysis
+references:
+  - type: data
+    title: "Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production (VASP inputs and outputs)"
+    authors:
+      - family-names: Kumar
+        given-names: Manish
+      - family-names: Wexler
+        given-names: "Robert B."
+    repository: "https://nomad-lab.eu"
+    doi: 10.17172/nomad.6d7e-hvb1
+preferred-citation:
+  type: article
+  title: "Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production"
+  authors:
+    - family-names: Kumar
+      given-names: Manish
+    - family-names: Ali
+      given-names: Natalia
+    - family-names: Witman
+      given-names: "Matthew D."
+    - family-names: Zhai
+      given-names: Shang
+    - family-names: Miller
+      given-names: "James E."
+    - family-names: Ermanoski
+      given-names: Ivan
+    - family-names: Stechel
+      given-names: "Ellen B."
+    - family-names: Wexler
+      given-names: "Robert B."
+  journal: "Journal of Materials Chemistry A"
+  year: 2026
+  status: in-press

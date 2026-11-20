@@ -5,6 +5,7 @@ of the data and figure deposit:
   scripts/INCAR                 representative VASP input
   README.md, figures/README.md, scripts/README.md, cfm-settings/README.md
   requirements.txt, .gitignore
+  CITATION.cff, .zenodo.json    citation and archive metadata
 
 The data and figures are covered instead by the Creative Commons Attribution
 4.0 International license in LICENSE-DATA:

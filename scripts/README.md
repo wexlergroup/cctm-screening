@@ -15,21 +15,21 @@ Self-contained copies of the analysis scripts behind the published results, adap
 
 Every DFT-derived number in the manuscript can be followed from the raw VASP outputs to the published artifact:
 
-1. **Raw calculations** -- the NOMAD deposit, DOI [10.17172/nomad.6d7e-hvb1](https://doi.org/10.17172/nomad.6d7e-hvb1) (one directory per calculation: 6 bulk relaxations + 90 oxygen-vacancy relaxations).
+1. **Raw calculations** -- the NOMAD deposit, DOI [10.17172/nomad.6d7e-hvb1](https://doi.org/10.17172/nomad.6d7e-hvb1) (one directory per calculation: 6 bulk relaxations, 90 oxygen-vacancy relaxations, and 2 static runs on a 2×2×2 *k*-grid for Ca₅₄Ce₁₈Ti₃₆Mn₃₆O₂₁₆).
 2. **`figure_data_from_vasp.py`** extracts the final `energy(sigma->0)` of every run and writes the vacancy-formation-energy and hull-energy CSVs in `figures/data/`, using `E_O2` from `hull_data.py` (single source of truth).
 3. **`figures/cfm_model.py`** re-fits the CFM on `dft_ev_sites.csv` and computes the Table 3 CFM and SCAN+*U* Δ*δ* columns; `dgnn_delta_grid.py` produces the dGNN grid.
 4. **`figures/figure*.py`** render the PNGs in `figures/plots/` from the CSVs (see `figures/README.md` for the per-figure map).
 
 The experimental chain is shorter: `tga_preprocess.py` converts the as-received TGA workbooks into the `tga_*.csv` files; the XRD CSVs and LSFR JSON files are themselves the as-received data (see the provenance tables in `figures/README.md`).
 
-Not regenerable from the data included here: the dGNN model outputs themselves (the prediction columns of `dgnn_preds_*.csv` and `dgnn_screen_finetuned.csv`; the dGNN is external), the per-fold metrics in `dgnn_cv_folds.csv` (fold membership is not recorded), and the 2×2×2 *k*-grid DOS check (its run is not in the deposit; see the deposit README completeness notes).
+Not regenerable from the data included here: the dGNN model outputs themselves (the prediction columns of `dgnn_preds_*.csv` and `dgnn_screen_finetuned.csv`; the dGNN is external) and the per-fold metrics in `dgnn_cv_folds.csv` (fold membership is not recorded). The density-of-states data in `dft_dos.csv` were extracted from the `vasprun.xml` files of the NOMAD deposit, including its 2×2×2 *k*-grid bulk run; the extraction script is not included here.
 
 POTCAR files are not redistributable under the VASP license; the PAW potential identities are listed in the Methods.
 
 ## Usage
 
 ```bash
-python scripts/figure_data_from_vasp.py    # from the raw VASP tree to figures/data/
+python scripts/figure_data_from_vasp.py --vasp-root <NOMAD deposit directory>    # from the raw VASP tree to figures/data/
 python scripts/dgnn_delta_grid.py
 python scripts/tga_preprocess.py
 python scripts/ehull.py Ca48Ce24Ti18Mn54O216 <total energy in eV>
