@@ -3,6 +3,8 @@ message: "If you use these data or scripts, please cite the article given under 
 type: dataset
 title: "Data and figure scripts for \"Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production\""
 version: "1.0.0"
+doi: 10.5281/zenodo.24388820
+date-released: "2026-11-20"
 abstract: "Processed data, figure scripts, and rendered figures for a study of oxygen-vacancy formation energetics in Ca–Ce–Ti–Mn (CCTM) perovskites for two-step solar thermochemical hydrogen production: SCAN+U oxygen-vacancy formation energies, crystal-feature-model and defect graph neural network predictions, and thermogravimetric, stagnation-flow-reactor, and powder X-ray diffraction measurements. The raw VASP inputs and outputs are in the NOMAD repository, DOI 10.17172/nomad.6d7e-hvb1."
 authors:
   - family-names: Kumar
