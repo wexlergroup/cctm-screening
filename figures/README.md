@@ -2,7 +2,7 @@
 
 Every figure in the manuscript (`main.tex`) and the ESI (`esi.tex`) is produced by one standalone script in this directory, reading processed data from `data/` and writing a 600-dpi PNG to `plots/`. The PNGs in `plots/` are what the documents embed, so the paper compiles without running any Python; run a script only to change its figure, and the PNG it writes replaces the previous one.
 
-Regeneration is deterministic: an unchanged script regenerates its PNG in `plots/` byte for byte with matplotlib's default macOS backend (`macosx`) on a machine where Arial resolves (check stderr for `findfont` warnings). With the `Agg` backend (the default on a headless or Linux machine) the output is visually equivalent, but text positions and image dimensions shift by a few pixels. All scripts run from inside `figures/`:
+Regeneration is deterministic: an unchanged script regenerates its PNG in `plots/` byte for byte with the package versions pinned in `../requirements.txt` and matplotlib's default macOS backend (`macosx`) on a machine where Arial resolves (check stderr for `findfont` warnings). Pillow is pinned because it writes the PNG files: on macOS, Pillow 12.3.0 encodes the same pixels into different bytes. With the `Agg` backend (the default on a headless or Linux machine) the output is visually equivalent, but text positions and image dimensions shift by a few pixels. All scripts run from inside `figures/`:
 
 ```bash
 cd figures && python3 figure3.py

@@ -39,7 +39,7 @@ cd figures
 python figure3.py        # writes plots/figure3.png
 ```
 
-Each script reads from `figures/data/` and writes one PNG to `figures/plots/`; run scripts from inside `figures/`. Regeneration is deterministic: with matplotlib's default macOS backend (`macosx`) on a machine where the Arial font resolves, an unchanged script reproduces the PNG in `figures/plots/` byte for byte. With the `Agg` backend (the default on a headless or Linux machine) the output is visually equivalent, but text positions and image dimensions shift by a few pixels, and without Arial matplotlib substitutes another font. The Fig. 1 structure panels additionally require `pip install ovito`; the rendered panels are included, so OVITO is needed only to re-render them.
+Each script reads from `figures/data/` and writes one PNG to `figures/plots/`; run scripts from inside `figures/`. Regeneration is deterministic: with the package versions pinned in `requirements.txt` (they install on Python 3.10 to 3.13) and matplotlib's default macOS backend (`macosx`) on a machine where the Arial font resolves, an unchanged script reproduces the PNG in `figures/plots/` byte for byte. Pillow is pinned because it writes the PNG files: on macOS, Pillow 12.3.0 encodes the same pixels into different bytes. With the `Agg` backend (the default on a headless or Linux machine) the output is visually equivalent, but text positions and image dimensions shift by a few pixels, and without Arial matplotlib substitutes another font. The Fig. 1 structure panels additionally require `pip install ovito`; the rendered panels are included, so OVITO is needed only to re-render them.
 
 ## Data availability
 
