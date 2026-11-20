@@ -2,7 +2,7 @@
   "title": "Data and figure scripts for \"Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production\"",
   "upload_type": "dataset",
   "version": "1.0.0",
-  "description": "<p>Processed data, figure scripts, and rendered figures for: M. Kumar, N. Ali, M. D. Witman, S. Zhai, J. E. Miller, I. Ermanoski, E. B. Stechel and R. B. Wexler, <em>Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production</em>, J. Mater. Chem. A, 2026, accepted.</p><p>The archive holds the SCAN+<em>U</em> oxygen-vacancy formation energies, the crystal-feature-model and defect graph neural network predictions, the thermogravimetric, stagnation-flow-reactor, and powder X-ray diffraction measurements, and one script per figure. The raw VASP inputs and outputs are in the NOMAD repository, DOI <a href=\"https://doi.org/10.17172/nomad.6d7e-hvb1\">10.17172/nomad.6d7e-hvb1</a>.</p><p>Data and figures are licensed CC BY 4.0 (LICENSE-DATA); the code, READMEs, and configuration files are licensed MIT (LICENSE).</p>",
+  "description": "<p>Processed data, figure scripts, and rendered figures for: M. Kumar, N. Ali, M. D. Witman, S. Zhai, J. E. Miller, I. Ermanoski, E. B. Stechel and R. B. Wexler, <em>Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production</em>, J. Mater. Chem. A, 2026, DOI: <a href=\"https://doi.org/10.1039/D6TA06895B\">10.1039/D6TA06895B</a>.</p><p>The archive holds the SCAN+<em>U</em> oxygen-vacancy formation energies, the crystal-feature-model and defect graph neural network predictions, the thermogravimetric, stagnation-flow-reactor, and powder X-ray diffraction measurements, and one script per figure. The raw VASP inputs and outputs are in the NOMAD repository, DOI <a href=\"https://doi.org/10.17172/nomad.6d7e-hvb1\">10.17172/nomad.6d7e-hvb1</a>.</p><p>Data and figures are licensed CC BY 4.0 (LICENSE-DATA); the code, READMEs, and configuration files are licensed MIT (LICENSE).</p>",
   "creators": [
     {"name": "Kumar, Manish", "affiliation": "Washington University in St. Louis"},
     {"name": "Ali, Natalia", "affiliation": "Arizona State University"},
@@ -27,6 +27,7 @@
   ],
   "related_identifiers": [
     {"identifier": "10.17172/nomad.6d7e-hvb1", "relation": "isSupplementedBy", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "10.1039/D6TA06895B", "relation": "isSupplementTo", "scheme": "doi", "resource_type": "publication-article"},
     {"identifier": "arXiv:2607.28752", "relation": "isSupplementTo", "scheme": "arxiv", "resource_type": "publication-preprint"}
   ],
   "notes": "Supported by the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, Fuel Cell Technologies Office, Award Number DE-EE0010733, through the HydroGEN Advanced Water Splitting Materials Consortium."

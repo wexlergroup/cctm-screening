@@ -2,7 +2,7 @@
 
 The processed data, the scripts that generate all figures, and the figures for:
 
-> Manish Kumar, Natalia Ali, Matthew D. Witman, Shang Zhai, James E. Miller, Ivan Ermanoski, Ellen B. Stechel, and Robert B. Wexler, *Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production*, *J. Mater. Chem. A*, 2026, accepted (preprint: [arXiv:2607.28752](https://arxiv.org/abs/2607.28752)).
+> Manish Kumar, Natalia Ali, Matthew D. Witman, Shang Zhai, James E. Miller, Ivan Ermanoski, Ellen B. Stechel, and Robert B. Wexler, *Local B-site chemistry controls oxygen-vacancy energetics in Ca–Ce–Ti–Mn perovskites for thermochemical hydrogen production*, *J. Mater. Chem. A*, 2026, DOI [10.1039/D6TA06895B](https://doi.org/10.1039/D6TA06895B) (preprint: [arXiv:2607.28752](https://arxiv.org/abs/2607.28752)).
 
 The study maps oxygen-vacancy formation energetics in Ca–Ce–Ti–Mn (CCTM) perovskites for two-step solar thermochemical water splitting, combining SCAN+*U* density-functional-theory calculations, two complementary fitted models (a linear crystal-feature model, CFM, and a defect graph neural network, dGNN), and experimental synthesis, X-ray diffraction, thermogravimetric analysis, and stagnation-flow-reactor cycling.
 
